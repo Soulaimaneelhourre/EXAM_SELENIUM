@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .env
 screenshots/
+selenium-workshop/
+.pytest_cache
+__pycache__/
