@@ -1,21 +1,10 @@
+## WARNING this project is set to work with microsoft edge browser 
+
 # practice exams selenium
 
-This project is part of a hands-on Selenium automation training.
-
-## Project Description
-This automation script:
-- Opens a browser
-- Navigates to [https://www.python.org](https://www.python.org)
-- Searches for “selenium”
-- Takes a screenshot of the results page
-- Closes the browser
-
-## Technologies Used
 - Python
 - Selenium
 - WebDriver Manager
-
-## Setup Instructions
 
 ### 1. Create and activate a virtual environment:
 ```bash
@@ -37,7 +26,7 @@ Practice Activity: Login Test Automation
 -- pytest login_test_exercise.py
 
 
-## ⚠️ Python Version Notice
+## Python Version Notice
 
 **Use Python 3.11 (64-bit)** for this project.  
 Python 3.13 is not fully supported by some Selenium tools and can cause errors like:
