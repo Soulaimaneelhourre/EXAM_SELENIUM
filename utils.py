@@ -1,0 +1,19 @@
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+import time
+import os
+
+def get_driver():
+    """Initialize and return a Chrome WebDriver."""
+    options = webdriver.ChromeOptions()
+    options.add_argument("--start-maximized")
+    return webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
+def save_screenshot(driver, file_name):
+    """Take a screenshot and save it in the screenshots directory."""
+    timestamp = time.strftime("%Y%m%d-%H%M%S")
+    if not os.path.exists("screenshots"):
+        os.makedirs("screenshots")
+    path = f"screenshots/{file_name}_{timestamp}.png"
+    driver.save_screenshot(path)
+    print(f"Screenshot saved: {path}")
