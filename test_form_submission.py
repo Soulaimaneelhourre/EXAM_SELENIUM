@@ -11,24 +11,22 @@ def main():
     driver = get_driver()
 
     try:
-        # Step 1: Navigate to python.org
-        driver.get(BASE_URL)
+        driver.get(BASE_URL)  # go to python.org
 
-        # Step 2: Find search box
+        # Find the search box
         search_box = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.NAME, "q"))
         )
 
-        # Step 3: Search for "selenium"
         search_box.send_keys(SEARCH_QUERY)
         search_box.send_keys(Keys.RETURN)
 
-        # Step 4: Wait for results to load
+        # Wait until results show
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "content"))
         )
 
-        # Step 5: Screenshot
+        # Save a screenshot
         save_screenshot(driver, SCREENSHOT_NAME)
         print("Test Passed.")
 
@@ -37,8 +35,7 @@ def main():
 
     finally:
         time.sleep(2)
-        driver.quit()
+        driver.quit()  # Close browser
 
 if __name__ == "__main__":
     main()
- 

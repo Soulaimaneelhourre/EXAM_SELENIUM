@@ -24,6 +24,9 @@ python -m venv selenium-workshop
 selenium-workshop\Scripts\activate
 # macOS/Linux:
 source selenium-workshop/bin/activate
+#Execute script by running the following command
+python test_form_submission.py
+
 
 ## ⚠️ Python Version Notice
 
