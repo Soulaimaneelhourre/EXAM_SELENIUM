@@ -24,3 +24,8 @@ python -m venv selenium-workshop
 selenium-workshop\Scripts\activate
 # macOS/Linux:
 source selenium-workshop/bin/activate
+
+## ⚠️ Python Version Notice
+
+**Use Python 3.11 (64-bit)** for this project.  
+Python 3.13 is not fully supported by some Selenium tools and can cause errors like:
